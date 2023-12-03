@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(138, 194, 196);
+}
+
+.title {
+  font-size: 26px;
+  font-family: sans-serif;
+}
+
+.wrap-container {
+  max-width: 1000px;
+  padding: 30px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle circle { 
+  stroke-width: 5;
+}
+
+.wrap-container.anim {
+  background-color: #cde5dc;
+}
+
+.circle-anim circle {
+  fill: #c4b1e6;
+  transition: all 1s ease-in-out; 
+}
+
+.circle-anim circle:hover {
+  fill: #4e2d8a;
+  stroke-width: 15; 
+}
+
+.ellipse ellipse {
+  width: 120px;
+  height: 60px;
+}
